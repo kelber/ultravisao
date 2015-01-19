@@ -8,10 +8,11 @@ class VehicleNamesController < ApplicationController
 
   def show
    @vehicle_name = VehicleName.find(params[:id])
-   @comments = Comment.where(vehicle_name_id: @vehicle_name).order("created_at DESC")
+   @comments = Comment.where(vehicle_name_id: @vehicle_name)
   # @comment.manager_id = current_manager.id if current_manager
    #@comment.franqueado_id = current_franqueado.id if current_franqueado
   # inventei @comment.vistoriadore_id = current_vistoriadore.id if current_vistoriadore
+    # @comments = Comment.paginate(:page => params[:page], :per_page => 10)
   end
 
   def edit

@@ -16,6 +16,7 @@ gem 'dragonfly', '~> 1.0.7'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'geocoder'
 gem 'gmaps4rails'
+gem 'will_paginate', '~> 3.0.7'
 
 
 

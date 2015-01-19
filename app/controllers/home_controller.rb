@@ -4,7 +4,8 @@ class HomeController < ApplicationController
 
 	
   def index
-  	  @comments_resolvidos = Comment.all.where("completed_at true")
+  	  # @comments_resolvidos = Comment.all.where("completed_at true")
+  	  # @realizado = Comment.where(completed_at: true)
   end
 
   def show
