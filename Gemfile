@@ -17,6 +17,7 @@ gem 'acts_as_votable', '~> 0.10.0'
 gem 'geocoder'
 gem 'gmaps4rails'
 gem 'will_paginate', '~> 3.0.7'
+gem 'bootstrap', '~> 0.0.1'
 
 
 
@@ -32,11 +33,11 @@ group :test do
 end
 
 group :production do
-    gem 'pg'
+   gem 'pg', '~> 0.18.1'
   #  gem 'rails_12factor'
 end
 
 
 
-ruby "2.0.0"
+ruby "2.2.1"
 
